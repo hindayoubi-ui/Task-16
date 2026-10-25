@@ -1,0 +1,185 @@
+
+/* General page settings */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f8;
+    color: #333;
+    margin: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    min-height: 100vh;
+    background-color: #ffe4ec;
+    border-right: 1px solid #fbc5d5;
+    flex-shrink: 0;
+}
+
+/* Sidebar title */
+.sidebar h4 {
+    color: #be185d;
+    font-weight: bold;
+}
+
+/* Sidebar buttons */
+.sidebar-link {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: transparent;
+    color: #be185d;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Sidebar hover */
+.sidebar-link:hover,
+.sidebar-link.active {
+    background-color: #ec4899;
+    color: white;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #be185d;
+    font-weight: bold;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Card header */
+.card-header {
+    background-color: #fce7f3;
+    color: #be185d;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+/* Primary buttons */
+.btn-primary {
+    background-color: #ec4899;
+    border-color: #ec4899;
+    color: white;
+    border-radius: 8px;
+    padding: 9px 16px;
+}
+
+.btn-primary:hover {
+    background-color: #be185d;
+    border-color: #be185d;
+    color: white;
+}
+
+/* Pink buttons and table headings */
+.btn-warning,
+.table-warning th {
+    background-color: #ec4899 !important;
+    border-color: #ec4899 !important;
+    color: white !important;
+}
+
+/* Form labels */
+.form-label {
+    font-weight: 600;
+    color: #444;
+}
+
+/* Form inputs */
+.form-control,
+.form-select {
+    border-radius: 8px;
+    border: 1px solid #f9a8d4;
+    padding: 10px 12px;
+}
+
+/* Input focus */
+.form-control:focus,
+.form-select:focus {
+    border-color: #ec4899;
+    box-shadow: 0 0 0 0.2rem rgba(236, 72, 153, 0.15);
+}
+
+/* Table */
+.table {
+    margin-bottom: 0;
+    background-color: white;
+}
+
+.table thead th {
+    white-space: nowrap;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Edit and Delete buttons */
+.btn-success,
+.btn-danger {
+    border-radius: 6px;
+}
+
+/* Modal */
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background-color: #fce7f3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 150px;
+        padding: 10px !important;
+    }
+
+    .sidebar-link {
+        font-size: 14px;
+        padding: 10px 8px;
+    }
+
+    .main-content {
+        padding: 15px !important;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 120px;
+    }
+
+    .sidebar h4 {
+        font-size: 16px;
+    }
+
+    .sidebar-link {
+        font-size: 12px;
+    }
+}
